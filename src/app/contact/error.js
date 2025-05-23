@@ -1,8 +1,11 @@
-const error = ({error}) => {
-    return(
+'use client';
+
+const Error = ({ error, reset }) => {
+    return (
         <>
-        <p>error page {error.message}</p>
+            <p>error page {error.message}</p>
         </>
-    )
-}
-export default Error
+    );
+};
+
+export default Error;
